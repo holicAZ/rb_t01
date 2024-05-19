@@ -1,0 +1,11 @@
+<h1> 2324332 </h1>
+<% @posts.each do |post| %>
+  <h3><%= post.title %></h3>
+  <p><%= post.content %></p>
+
+
+      <% post.comments.each do |comment| %>
+      <p><%= comment.body %></p>
+      <% end %>
+
+<% end %>
